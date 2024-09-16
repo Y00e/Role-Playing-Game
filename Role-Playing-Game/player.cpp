@@ -37,3 +37,5 @@ void Player::removeItem(int index) {
 std::string Player::getName() const {
 	return name;
 };
+
+////Kommentar
