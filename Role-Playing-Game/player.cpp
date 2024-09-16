@@ -18,7 +18,12 @@ void Player::displayInventory() const {
 }
 
 void Player::useItem(int index) {
-
+    if (index >= 0 && index < inventory.size()) {
+        inventory[index]->use();
+    }
+    else {
+        std::cerr << "Index out of bounds" << std::endl;
+    }
 };
 
 void Player::removeItem(int index) {
