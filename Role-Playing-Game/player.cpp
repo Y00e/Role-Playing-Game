@@ -1,9 +1,8 @@
 #include "player.h"
-#include <vector>
-#include <string>
-#include "Item.h"
+#include <iostream>
 
-Player::Player(std::string name, std::vector<Item*> inventory) : name(name), inventory(inventory) {
+Player::Player(std::string name) : name(name) {
+    
 };
 
 
