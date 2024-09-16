@@ -12,7 +12,7 @@ void Player::addItem(Item* item) {
 
 void Player::displayInventory() const {
     for (size_t i = 0; i < inventory.size(); ++i) { //using size_t instead of int, because of less risk for bugs than int
-        std::cout << "Index " << i << ": " << inventory[i]->getName() << std::endl;
+        std::cout << "Index " << i << ": " << inventory[i]->getName()<< "\n" << std::endl;
     }
 }
 
@@ -21,7 +21,7 @@ void Player::useItem(int index) {
         inventory[index]->use();
     }
     else {
-        std::cerr << "Index out of bounds" << std::endl;
+        std::cout << "Invalid option.\n";
     }
 };
 
@@ -30,7 +30,7 @@ void Player::removeItem(int index) {
         inventory.erase(inventory.begin() + index);
     }
     else {
-        std::cerr << "Index out of bounds" << std::endl;
+        std::cout << "Invalid option.\n";
     }
 }
 

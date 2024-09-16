@@ -6,6 +6,6 @@ Armor::Armor(const std::string& name, int weight, int setArmor)
 
 
 void Armor::use() {
-	std::cout << getName() <<" with defense " << defense << " is equipped" << std::endl;
+	std::cout << getName() <<" with defense " << defense << " is equipped \n" << std::endl;
 }
 
