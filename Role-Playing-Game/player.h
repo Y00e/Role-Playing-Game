@@ -1,16 +1,16 @@
 #pragma once
 #include <vector>
 #include <string>
-//#include "item"
+#include "Item.h"
 
 class Player {
 	private:
 		std::string name;
-		std::vector<item*> inventory;
+		std::vector<Item*> inventory;
 
 	public:
 		Player(std::string name, std::vector<Item*>) {};
-		//void addItem(Item* item) {};
+		void addItem(Item* item) {};
 		void displayInventory() const {};
 		void useItem(int index) {};
 		void removeItem(int index) {};
