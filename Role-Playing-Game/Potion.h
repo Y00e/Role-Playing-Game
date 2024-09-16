@@ -10,5 +10,4 @@ public:
     Potion(const std::string& name, int weight, int healingAmount);
     void use() override;
 
-    ~Potion();
 };

@@ -15,4 +15,6 @@ class Player {
 		void useItem(int index);
 		void removeItem(int index);
 		std::string getName() const;
+
+		~Player();
 };

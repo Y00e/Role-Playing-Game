@@ -38,4 +38,8 @@ std::string Player::getName() const {
 	return name;
 };
 
-////Kommentar
+Player::~Player() {
+    std::cout << "Player desctructor called" << std::endl;
+}
+
+
