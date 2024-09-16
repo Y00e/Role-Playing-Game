@@ -7,9 +7,10 @@ private:
 	double range;
 
 public:
-	Weapon( const std::string& name, int damage, double range) :  damage(damage), range(range) {}
+	Weapon( const std::string& name, int weight, int damage, double range) 
+		: Item(name, weight),  damage(damage), range(range) {}
+	
 	void use();
 
 };
-
 
