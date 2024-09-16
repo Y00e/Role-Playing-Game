@@ -28,7 +28,7 @@ int main()
 
     int chooseOption;
 
-    bool gameOver;
+    bool gameOver = false;
 
     std::cout <<"Hello " << playerName << std::endl;
 
