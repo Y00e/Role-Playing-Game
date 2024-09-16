@@ -10,6 +10,7 @@ int main()
     Player playerA = Player("A");
     playerA.addItem(&chainmail);
     playerA.displayInventory();
+    //kommentar
 
     return 0;
 }
